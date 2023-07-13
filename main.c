@@ -9,5 +9,5 @@ int ft_putchar(char c)
 int main()
 {
     ft_print_comb();
-	return 0;
+	return 1;
 }
