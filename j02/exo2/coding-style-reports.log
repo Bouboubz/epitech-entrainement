@@ -1,0 +1,14 @@
+./ft_print_reverse_alphabet.c:1: MINOR:C-G1
+./ft_print_reverse_alphabet.c:3: MAJOR:C-F6
+./ft_print_reverse_alphabet.c:5: MINOR:C-L2
+./ft_print_reverse_alphabet.c:8: MINOR:C-L3
+./ft_print_reverse_alphabet.c:9: MINOR:C-L4
+./ft_print_reverse_alphabet.c:16: MINOR:C-G8
+./ft_print_reverse_alphabet.c:17: MINOR:C-G8
+./main.c:1: MINOR:C-G1
+./main.c:2: MAJOR:C-G5
+./main.c:6: MINOR:C-L2
+./main.c:9: MAJOR:C-F6
+./main.c:12: MINOR:C-L2
+./main.c:13: INFO:C-A3
+./write:1: MAJOR:C-O1
