@@ -1,11 +1,4 @@
 ./ft_print_alphabet.c:1: MINOR:C-G1
 ./ft_print_alphabet.h:1: MINOR:C-G1
-./ft_print_alphabet.h:2: MINOR:C-G3
 ./main.c:1: MINOR:C-G1
-./paf.c:1: MINOR:C-G1
-./paf.c:2: MINOR:C-G3
-./paf.c:2: MAJOR:C-H1
-./paf.c:8: MAJOR:C-F3
-./paf.c:10: MAJOR:C-F3
-./paf.c:26: INFO:C-A3
 ./write:1: MAJOR:C-O1
