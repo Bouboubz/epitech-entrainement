@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "ft_print_alphabet.h"
 
 int ft_putchar(char c)
