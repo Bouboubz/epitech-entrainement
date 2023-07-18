@@ -1,34 +1,25 @@
-int ft_putchar(char c);
-void print_numbers (char a, char b, char c);
-void print_space ();
+#include "ft_print_comb.h"
 
-void ft_print_comb ()
+void ft_print_comb (void)
 {
     char a = '0';
     char b = '1';
     char c = '2';
 
-    while (a != '7') {
-        if (c == ':') {
-             c = '0';
-             b++;
-             while(b >= c) {
+    while (a <= '9') {
+    b = a + 1;
+        while (b <= '9') {
+            c = b + 1;
+            while (c <= '9') {
+                print_numbers(a, b ,c);
                 c++;
-                if (b == '9') {
-                    b = '0';
-                    a++;
-                    while (a >=b) {
-                        b++;
-                    }
-                }
-             }
+            }
+            b++;
         }
-        print_numbers(a, b, c);
-        c++;
-        if(a != '7') {
-            print_space();
-        }
+        a++;
     }
+
+
 }
 
 void print_numbers (char a, char b, char c)
@@ -36,10 +27,8 @@ void print_numbers (char a, char b, char c)
     ft_putchar(a);
     ft_putchar(b);
     ft_putchar(c);
-}
-
-void print_space ()
-{
-    ft_putchar(',');
-    ft_putchar(' ');
+    if (a != '7') {
+        ft_putchar(',');
+        ft_putchar(' ');
+    }
 }

@@ -1,4 +1,4 @@
-int ft_putchar(char c);
+#include "ft_print_reverse_alphabet.h"
 
 void ft_print_reverse_alphabet(void)
 {

@@ -1,4 +1,4 @@
-int ft_putchar(char c);
+#include "ft_is_negative.h"
 
 void ft_is_negative(int n)
 {

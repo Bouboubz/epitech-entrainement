@@ -1,4 +1,4 @@
-int ft_putchar (char c);
+#include "ft_print_numbers.h"
 
 void ft_print_numbers(void)
 {
