@@ -1,12 +1,12 @@
-#include "ft_print_reverse_alphabet.h"
+#include "my_print_revalpha.h"
 
-int ft_putchar(char c)
+int my_putchar(char c)
 {
     write(1, &c, 1);
 }
 
 int main(void)
 {
-    ft_print_reverse_alphabet();
+    my_print_revalpha();
     return 0;
 }

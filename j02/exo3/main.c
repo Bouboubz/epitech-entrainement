@@ -1,12 +1,12 @@
-#include "ft_print_numbers.h"
+#include "my_print_digits.h"
 
-int ft_putchar(char c)
+int my_putchar(char c)
 {
     write(1, &c, 1);
 }
 
 int main(void)
 {
-    ft_print_numbers();
+    my_print_digits();
     return 0;
 }

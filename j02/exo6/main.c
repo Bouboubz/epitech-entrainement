@@ -1,13 +1,12 @@
-#include <unistd.h>
-#include "ft_print_comb2.c"
+#include "my_print_comb2.c"
 
-int ft_putchar(char c)
+int my_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
 int main()
 {
-    ft_print_comb2();
+    my_print_comb2();
 	return 0;
 }

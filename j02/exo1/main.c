@@ -1,12 +1,12 @@
-#include "ft_print_alphabet.h"
+#include "my_print_alpha.h"
 
-int ft_putchar(char c)
+int my_putchar(char c)
 {
     write(1, &c, 1);
 }
 
 int main(void)
 {
-    ft_print_alphabet();
+    my_print_alpha();
     return 0;
 }

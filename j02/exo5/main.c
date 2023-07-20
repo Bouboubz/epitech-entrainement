@@ -1,12 +1,12 @@
-#include "ft_print_comb.h"
+#include "my_print_comb.h"
 
-int ft_putchar(char c)
+int my_putchar(char c)
 {
     write(1, &c, 1);
 }
 
 int main(void)
 {
-    ft_print_comb();
+    my_print_comb();
     return 0;
 }

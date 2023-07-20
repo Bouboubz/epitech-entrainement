@@ -1,6 +1,6 @@
-#include "ft_print_comb.h"
+#include "my_print_comb.h"
 
-void ft_print_comb (void)
+void my_print_comb (void)
 {
     char a = '0';
     char b = '1';
@@ -24,11 +24,11 @@ void ft_print_comb (void)
 
 void print_numbers (char a, char b, char c)
 {
-    ft_putchar(a);
-    ft_putchar(b);
-    ft_putchar(c);
+    my_putchar(a);
+    my_putchar(b);
+    my_putchar(c);
     if (a != '7') {
-        ft_putchar(',');
-        ft_putchar(' ');
+        my_putchar(',');
+        my_putchar(' ');
     }
 }
