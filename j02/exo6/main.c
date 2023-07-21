@@ -1,4 +1,4 @@
-#include "my_print_comb2.c"
+#include "my_print_comb2.h"
 
 int my_putchar(char c)
 {
