@@ -2,15 +2,9 @@
 
 void my_print_comb (void)
 {
-    char a = '0';
-    char b = '1';
-    char c = '2';
-
-    for (a ; a <= '9' ; a++) {
-    b = a + 1;
-        for (b ; b <= '9' ; b++) {
-            c = b + 1;
-            for (c ; c <= '9' ; c++) {
+    for (char a = '0' ; a <= '9' ; a++) {
+        for (char b = a + 1 ; b <= '9' ; b++) {
+            for (char c = b + 1 ; c <= '9' ; c++) {
                 print_numbers(a, b ,c);
             }
         }
