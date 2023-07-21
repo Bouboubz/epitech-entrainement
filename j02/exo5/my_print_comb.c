@@ -6,17 +6,14 @@ void my_print_comb (void)
     char b = '1';
     char c = '2';
 
-    while (a <= '9') {
+    for (a ; a <= '9' ; a++) {
     b = a + 1;
-        while (b <= '9') {
+        for (b ; b <= '9' ; b++) {
             c = b + 1;
-            while (c <= '9') {
+            for (c ; c <= '9' ; c++) {
                 print_numbers(a, b ,c);
-                c++;
             }
-            b++;
         }
-        a++;
     }
 
 
