@@ -2,20 +2,41 @@
 
 void my_put_nbr(int nb)
 {
-    int inv;
-    while(num > 0) {
-        //split the last digit 
-        int mod = num % 10;
-        
-        //multiply ans with 10 and add the splitted digit
-        ans = ans * 10 + mod;
-        
-        //divide num by 10
-        num = num / 10;
+    if (nb >= 0) {
+        principal_pos(nb);
+    } else {
+        nb = (-nb);
+        principal_neg(nb);
     }
-    while (inv != 0) {
-        char a = '0' + inv % 10;
+}
+
+void principal_pos(int nb)
+{
+    int ans = 0;
+    do {
+        while (nb > 0) {
+            int mod = nb % 10;
+            ans = ans * 10 + mod;
+            nb = nb / 10;
+        }
+        char a = '0' + ans % 10;
         my_putchar(a);
-        inv = inv / 10;
-    }
+        ans = ans / 10;
+        } while (ans != 0);
+}
+
+void principal_neg(int nb)
+{
+    int ans = 0;
+    my_putchar('-');
+    do {
+        while (nb > 0) {
+            int mod = nb % 10;
+            ans = ans * 10 + mod;
+            nb = nb / 10;
+        }
+        char a = '0' + ans % 10;
+        my_putchar(a);
+        ans = ans / 10;
+        } while (ans != 0);
 }

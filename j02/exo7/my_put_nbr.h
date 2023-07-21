@@ -5,5 +5,7 @@
 
 int my_putchar(char c);
 void my_put_nbr(int nb);
+void principal_pos(int nb);
+void principal_neg(int nb);
 
 #endif
