@@ -3,7 +3,7 @@
 
     #include <unistd.h>
 
-int my_putchar(char c); 
+int my_putchar(char c);
 void my_print_comb2(void);
 void my_print_number(char n1, char n2, char n3, char n4);
 
