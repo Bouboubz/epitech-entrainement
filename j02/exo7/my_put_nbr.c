@@ -2,38 +2,39 @@
 
 void my_put_nbr(int nb)
 {
-    if (nb >= 0) {
-        principal_pos(nb);
+    long n = nb;
+    if (n >= 0) {
+        principal_pos(n);
     } else {
-        nb = (-nb);
-        principal_neg(nb);
+        n = (-n);
+        principal_neg(n);
     }
 }
 
-void principal_pos(int nb)
+void principal_pos(int n)
 {
     int ans = 0;
     do {
-        while (nb > 0) {
-            int mod = nb % 10;
+        while (n > 0) {
+            int mod = n % 10;
             ans = ans * 10 + mod;
-            nb = nb / 10;
+            n = n / 10;
         }
         char a = '0' + ans % 10;
         my_putchar(a);
         ans = ans / 10;
-        } while (ans != 0);
+        } while (ans > 0);
 }
 
-void principal_neg(int nb)
+void principal_neg(int n)
 {
     int ans = 0;
     my_putchar('-');
     do {
-        while (nb > 0) {
-            int mod = nb % 10;
+        while (n > 0) {
+            int mod = n % 10;
             ans = ans * 10 + mod;
-            nb = nb / 10;
+            n = n / 10;
         }
         char a = '0' + ans % 10;
         my_putchar(a);
