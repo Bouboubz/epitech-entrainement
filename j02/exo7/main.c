@@ -7,6 +7,6 @@ int my_putchar(char c)
 
 int main(void)
 {
-    my_put_nbr(100);
+    my_put_nbr(1000000);
     return 0;
 }

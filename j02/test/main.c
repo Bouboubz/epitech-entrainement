@@ -1,27 +1,32 @@
 #include<stdio.h>
 
-int main()
-{
-    int num, ans = 0;
-    
-    //get input from user
-    scanf("%d",&num);
-    
-    //do till num > 0
-    while(num > 0)
-    {
-        //split the last digit 
-        int mod = num % 10;
-        
-        //multiply ans with 10 and add the splitted digit
-        ans = ans * 10 + mod;
-        
-        //divide num by 10
-        num = num / 10;
+char zero = '0';
+char negativ = '-';
+
+int my_put_nbr(int in) {
+    long n = in;
+    if (n == 0) {
+        write(1, &zero, 1);
+    } else {
+        if (n < 0) {
+            write(1, &negativ, 1);
+            n = n * -1;
+        }
+        long r = 1;
+        long c = 0;
+        while ((n / r) != 0) {
+            r = r * 10;
+            c++;
+        }
+        for (int i = 0; i < c; i++) {
+            long number = 48 + (n % r / (r / 10));
+            r = r / 10;
+            write(1, &number, 1);
+        }
     }
-    
-    //print the reversed number
-    printf("Reversed Number is %d\n",ans);
-    
+}
+int main()
+{   
+    my_put_nbr(2147483647);
     return 0;
 }
