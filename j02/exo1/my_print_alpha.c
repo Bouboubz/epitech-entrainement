@@ -1,6 +1,6 @@
 #include "my_print_alpha.h"
 
-void my_print_alpha(void)
+int my_print_alpha(void)
 {
     char a;
     a = 'a';

@@ -1,6 +1,6 @@
 #include "my_print_digits.h"
 
-void my_print_digits(void)
+int my_print_digits(void)
 {
     char a;
     a = '0';

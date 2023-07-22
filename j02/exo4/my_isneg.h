@@ -4,6 +4,6 @@
     #include <unistd.h>
 
 int my_putchar(char c);
-void my_isneg(int n);
+int my_isneg(int n);
 
 #endif

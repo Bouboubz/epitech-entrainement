@@ -1,6 +1,6 @@
 #include "my_put_nbr.h"
 
-void my_put_nbr(int nb)
+int my_put_nbr(int nb)
 {
     long n = nb;
     if (n >= 0) {

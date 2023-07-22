@@ -1,6 +1,6 @@
 #include "my_print_comb.h"
 
-void my_print_comb (void)
+int my_print_comb (void)
 {
     for (char a = '0' ; a <= '9' ; a++) {
         for (char b = a + 1 ; b <= '9' ; b++) {

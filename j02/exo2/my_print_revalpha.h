@@ -3,6 +3,6 @@
     #include <unistd.h>
 
 int my_putchar (char c);
-void my_print_revalpha(void);
+int my_print_revalpha(void);
 
 #endif

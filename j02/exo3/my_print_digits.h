@@ -4,6 +4,6 @@
     #include <unistd.h>
 
 int my_putchar(char c);
-void my_print_digits(void);
+int my_print_digits(void);
 
 #endif

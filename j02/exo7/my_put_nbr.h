@@ -4,7 +4,7 @@
     #include <unistd.h>
 
 int my_putchar(char c);
-void my_put_nbr(int nb);
+int my_put_nbr(int nb);
 void principal(long n);
 
 #endif

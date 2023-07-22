@@ -3,7 +3,7 @@
 
     #include <unistd.h>
 
-void my_print_alpha(void);
+int my_print_alpha(void);
 int my_putchar (char c);
 
 #endif
