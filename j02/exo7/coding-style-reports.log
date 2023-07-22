@@ -1,0 +1,4 @@
+./main.c:1: MINOR:C-G1
+./my_put_nbr.c:1: MINOR:C-G1
+./my_put_nbr.h:1: MINOR:C-G1
+./write:1: MAJOR:C-O1
