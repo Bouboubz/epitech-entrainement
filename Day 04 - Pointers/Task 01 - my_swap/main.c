@@ -7,6 +7,6 @@ int my_putchar(char c)
 
 int main(void)
 {
-    my_swap();
+    my_swap(*a, *b);
     return 0;
 }
