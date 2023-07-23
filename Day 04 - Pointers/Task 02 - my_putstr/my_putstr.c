@@ -2,6 +2,8 @@
 
 int my_putstr(char const *str)
 {
-    int i = 82;
-    return i;
+    for(int i = 0 ; str[i] != '\0' ; i ++ ) {
+        char a = str[i];
+        my_putchar(a);
+    }
 }
