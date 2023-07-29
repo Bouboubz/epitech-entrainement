@@ -2,12 +2,14 @@
 
 int my_print_alpha(void)
 {
-    char a;
-    a = 'a';
+/* We create a char that will take an encrypted value that will correspond to an 'a' then we will make it increase with
+* loop until you get a 'z' */
+    char letter;
+    letter = 'a';
 
-    while (a <= 'z') {
-        my_putchar(a);
-        a++;
+    while (letter <= 'z') {
+        my_putchar(letter);
+        letter++;
     }
 
 }

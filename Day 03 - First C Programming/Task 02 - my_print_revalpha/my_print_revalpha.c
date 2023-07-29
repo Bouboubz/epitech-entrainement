@@ -2,11 +2,13 @@
 
 int my_print_revalpha(void)
 {
-    char a;
-    a = 'z';
+/* We create a char that will take an encrypted value that will correspond to an 'z' then we will make it decrease with
+* loop until you get a 'z' */
+    char letter;
+    letter = 'z';
 
-    while (a >= 'a') {
-        my_putchar(a);
-        a--;
+    while (letter >= 'a') {
+        my_putchar(letter);
+        letter--;
     }
 }

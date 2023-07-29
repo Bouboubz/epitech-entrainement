@@ -2,26 +2,27 @@
 
 int my_put_nbr(int nb)
 {
-    long n = nb;
-    if (n >= 0) {
-        principal(n);
+/* */
+    long number = nb;
+    if (number >= 0) {
+        principal(number);
     } else {
-        n = (-n);
+        nombre = (-number);
         my_putchar('-');
-        principal(n);
+        principal(number);
     }
 }
 
-void principal(long n)
+void principal(long number)
 {
     int chiffre = 0;
     long ans = 0;
     do {
-        while (n > 0) {
+        while (number > 0) {
             chiffre++;
             int mod = n % 10;
             ans = ans * 10 + mod;
-            n = n / 10;
+            number = number / 10;
         }
         char a = '0' + ans % 10;
         my_putchar(a);
