@@ -8,7 +8,7 @@ int my_putchar(char c)
 
 int main(void)
 {
-    const char *str = "bonjour";
+    const char *str = "abcd";
     my_evil_str(str);
     return 0;
 }

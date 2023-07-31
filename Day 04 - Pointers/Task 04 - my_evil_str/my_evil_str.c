@@ -2,10 +2,13 @@
 
 char *my_evil_str(char *str)
 {
-    int i = 0;
-    while (str[i] != '\0') {
-        char a = str[i];
+    int counter = 0;
+    while (str[counter] != '\0') {
+        counter++;
+    }
+    while (counter != -1) {
+        char a = str[counter];
         my_putchar(a);
-        i++;
+        counter--;
     }
 }

@@ -7,7 +7,7 @@
 //We prototype the functions we are going to use and we include the library(s) used
 
 int my_putchar(char c);
-char *my_evil_str(char *pam);
+char *my_evil_str(char *str);
 
  #endif
  

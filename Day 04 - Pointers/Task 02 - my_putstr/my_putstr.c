@@ -2,8 +2,9 @@
 
 int my_putstr(char const *str)
 {
-    for(int i = 0 ; str[i] != '\0' ; i ++ ) {
-        char a = str[i];
-        my_putchar(a);
+// We create a loop or an int that will increase and that we will use to write each letter of the word that the variable contains
+    for(int counter = 0 ; str[counter] != '\0' ; counter ++ ) {
+        char letter = str[counter];
+        my_putchar(letter);
     }
 }
