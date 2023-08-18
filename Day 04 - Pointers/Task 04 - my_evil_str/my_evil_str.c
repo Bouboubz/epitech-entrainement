@@ -7,14 +7,14 @@ char *my_evil_str(char *str)
     while (str[counter] != '\0') {
         counter++;
     }
-    while (counter != -1) {
+    while (counter > 1/2) {
         char d = str[i];
         str[counter] = d;
         i++;
         counter--;
     }
-    /*for (int b = 0 ; str[b] != '\0' ; b++) {
+    for (int b = 0 ; str[b] != '\0' ; b++) {
         char a = str[b];
         my_putchar(a);
-    } */
+    }
 }
